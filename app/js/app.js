@@ -2,23 +2,19 @@
 
 /* App Module */
 
-var phonecatApp = angular.module('phonecatApp', [
+var mapsApp = angular.module('mapsApp', [
   'ngRoute',
-  'mapControllers',
+  'mapsControllers',
 ]);
 
-phonecatApp.config(['$routeProvider',
+mapsApp.config(['$routeProvider',
   function($routeProvider) {
     $routeProvider.
-      when('/phones', {
-        templateUrl: 'partials/phone-list.html',
-        controller: 'PhoneListCtrl'
-      }).
-      when('/phones/:phoneId', {
-        templateUrl: 'partials/phone-detail.html',
-        controller: 'PhoneDetailCtrl'
+      when('/maps', {
+        templateUrl: 'partials/maps.html',
+        controller: 'MapsMainController'
       }).
       otherwise({
-        redirectTo: '/phones'
+        redirectTo: '/maps'
       });
   }]);

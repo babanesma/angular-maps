@@ -2,9 +2,9 @@
 
 /* Controllers */
 
-var mapControllers = angular.module('mapControllers', []);
+var mapsControllers = angular.module('mapsControllers', []);
 
-mapControllers.controller('mapMainController', ['$scope', 'Phone',
-    function ($scope, Phone) {
+mapsControllers.controller('MapsMainController', ['$scope',
+    function ($scope) {
 
     }]);
