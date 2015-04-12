@@ -14,6 +14,10 @@ mapsApp.config(['$routeProvider',
         templateUrl: 'partials/maps.html',
         controller: 'MapsMainController'
       }).
+      when('/maps/:lat/:lang/:zoom', {
+        templateUrl: 'partials/maps.html',
+        controller: 'MapsParamController'
+      }).
       otherwise({
         redirectTo: '/maps'
       });
