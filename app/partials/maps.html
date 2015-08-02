@@ -2,7 +2,7 @@
 <style type="text/css">
     .angular-google-map-container { height: 400px; }
 </style>
-<ui-gmap-google-map center='map.center' zoom='map.zoom'>
+<ui-gmap-google-map center='map.center' refresh='true' zoom='map.zoom'>
     <ui-gmap-marker coords="marker.coords" options="marker.options" events="marker.events" idkey="marker.id"></ui-gmap-marker>
     <ui-gmap-marker coords="marker2.coords" options="marker2.options" events="marker2.events" idkey="marker2.id"></ui-gmap-marker>
     <ui-gmap-polyline ng-repeat="p in polylines" path="p.path" stroke="p.stroke" visible='p.visible'

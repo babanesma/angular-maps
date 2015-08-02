@@ -10,6 +10,10 @@ var mapsApp = angular.module('mapsApp', [
 mapsApp.config(['$routeProvider',
   function($routeProvider) {
     $routeProvider.
+      when('/route/:lat_start/:long_start/:lat_end/:long_end', {
+        templateUrl: 'partials/maps.html',
+        controller: 'MapsRouteController'
+      }).
       when('/maps', {
         templateUrl: 'partials/maps.html',
         controller: 'MapsMainController'
