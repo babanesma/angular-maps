@@ -7,7 +7,7 @@ var polylines = [];
 var started = false;
 mapsControllers.controller('MapsMainController', ['$scope',
     function ($scope) {
-        $scope.map = {center: {latitude: 30.0500, longitude: 31.2333}, zoom: 8};
+        $scope.map = {center: {latitude: 31.128123623911197, longitude: 30.645531445312486}, zoom: 8};
         $scope.marker = {
             id: 0,
             coords: {
